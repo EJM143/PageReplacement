@@ -10,16 +10,6 @@ public class Main {
         int[] pageSequence5 = {5,3,3,2,6,8,9,8,7,0,3,2,5,6,8};
         int[] pageSequence6 = {5,3,3,2,6,8,9,8,7,0,3,2,5,6,8};
 
-        int[] pageSequence8 = {1,2,3,4,1,5,6,2,1,2,3,7,6,3};
-
-        FIFOReplacementAlgo fifoAlgo8 = new FIFOReplacementAlgo(4);
-        runTestPrintPagefault(fifoAlgo8, "FIFO Test Case 8 ", pageSequence8);
-
-        LRUReplacementAlgo lruAlgo8 = new LRUReplacementAlgo(4);
-        runTestPrintPagefault(lruAlgo8, "LRU Test Case 8",  pageSequence8);
-
-        OPTReplacementAlgo optAlgo8 = new OPTReplacementAlgo(4);
-        runTestPrintPagefault(optAlgo8, "OPT Test Case 8",  pageSequence8);
 
         System.out.println("***FIFO Replacement Algorithm***");
 

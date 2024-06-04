@@ -47,12 +47,8 @@ public class OPTReplacementAlgo extends ReplacementAlgorithm{
                     inMemPages.add(pageRequestsequence.get(i));
                 }
             }
-
-
         }
-
         return pageFaultCount;
-
     }
 
     /**
