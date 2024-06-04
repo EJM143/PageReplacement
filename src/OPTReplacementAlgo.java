@@ -1,16 +1,27 @@
 import javax.swing.table.AbstractTableModel;
 import java.util.ArrayList;
 
+/**
+ * Represents the Optimal page replacement algorithm
+ * Inherits from the ReplacementAlgorithm class
+ */
 public class OPTReplacementAlgo extends ReplacementAlgorithm{
     ArrayList<Integer> pageRequestsequence;
     /**
-     * @param pageFrameCount - the number of physical page frames
+     * Constructs a OPTReplacementAlgo object with the specified
+     *      * number of page frames.
+     * @param pageFrameCount  the number of physical page frames
      */
     public OPTReplacementAlgo(int pageFrameCount) {
         super(pageFrameCount);
         pageRequestsequence = new ArrayList<>();
     }
 
+    /**
+     * Calculates and returns the total number of page faults using
+     * the OPT algorithm.
+     * @return  the total number of page faults.
+     */
     @Override
     public int getPageFaultCount() {
         pageFaultCount = 0;
@@ -44,6 +55,10 @@ public class OPTReplacementAlgo extends ReplacementAlgorithm{
 
     }
 
+    /**
+     * Inserts a page into the request sequence.
+     * @param pageNumber    the number of the pages to be inserted.
+     */
     @Override
     public void insert(int pageNumber) {
         pageRequestsequence.add(pageNumber);
