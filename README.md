@@ -60,4 +60,4 @@ Test Case: OPT Test Case 5 [rss:15, npf:5] Page Fault: 4
 Test Case: OPT Test Case 6 [rss:15, npf:7] Page Fault: 1 
 
 
-![Chart](PageReplacementAlgoGraph.png)
+![Chart](PageRepAlgoResultGraph.png)
