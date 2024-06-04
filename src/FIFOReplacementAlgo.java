@@ -23,8 +23,8 @@ public class FIFOReplacementAlgo extends ReplacementAlgorithm {
             return;
         if(pageFrameCount <= pageInsertSequence.size()){
             pageInsertSequence.poll();
-            pageFaultCount++;
         }
+        pageFaultCount++;
         pageInsertSequence.offer(pageNumber);
     }
 }

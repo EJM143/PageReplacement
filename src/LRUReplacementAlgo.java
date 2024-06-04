@@ -17,10 +17,13 @@ public class LRUReplacementAlgo extends ReplacementAlgorithm{
         if(pageInsertSequence.contains( pageNumber)) {
             pageInsertSequence.remove(Integer.valueOf(pageNumber));
         }
-        else if(pageFrameCount <= pageInsertSequence.size()){
-            pageInsertSequence.remove(0);
+        else{
             pageFaultCount++;
+            if(pageFrameCount <= pageInsertSequence.size()){
+                pageInsertSequence.remove(0);
+            }
         }
         pageInsertSequence.add(pageNumber);
     }
 }
+

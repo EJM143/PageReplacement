@@ -18,6 +18,7 @@ public class OPTReplacementAlgo extends ReplacementAlgorithm{
 
         for(int i = 0; i < pageRequestsequence.size();i++){
             if( !inMemPages.contains(pageRequestsequence.get(i))){
+                pageFaultCount++;
                 if(inMemPages.size() >= pageFrameCount){
 
                     //Evict one page and replace with current page
@@ -29,7 +30,6 @@ public class OPTReplacementAlgo extends ReplacementAlgorithm{
                         }
                     }
                     inMemPages.remove(Integer.valueOf(temp.get(0)));
-                    pageFaultCount++;
                     inMemPages.add(pageRequestsequence.get(i));
 
                 }else  {

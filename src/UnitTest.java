@@ -11,13 +11,13 @@ public class UnitTest {
         for (int i : pageSequence) {
             fifoAlgo.insert(i);
         }
-        assertEquals(10, fifoAlgo.getPageFaultCount());
+        assertEquals(13, fifoAlgo.getPageFaultCount());
 
         FIFOReplacementAlgo fifoAlgo1 = new FIFOReplacementAlgo(5);
         for (int i : pageSequence) {
             fifoAlgo1.insert(i);
         }
-        assertEquals(4, fifoAlgo1.getPageFaultCount());
+        assertEquals(9, fifoAlgo1.getPageFaultCount());
     }
 
     @Test
@@ -29,13 +29,13 @@ public class UnitTest {
         for (int i : pageSequence) {
             lruAlgo.insert(i);
         }
-        assertEquals(9, lruAlgo.getPageFaultCount());
+        assertEquals(12, lruAlgo.getPageFaultCount());
 
         LRUReplacementAlgo lruAlgo1 = new LRUReplacementAlgo(5);
         for (int i : pageSequence) {
             lruAlgo1.insert(i);
         }
-        assertEquals(5, lruAlgo1.getPageFaultCount());
+        assertEquals(10, lruAlgo1.getPageFaultCount());
     }
 
     @Test
@@ -47,12 +47,12 @@ public class UnitTest {
         for (int i : pageSequence) {
             optAlgo.insert(i);
         }
-        assertEquals(6, optAlgo.getPageFaultCount());
+        assertEquals(9, optAlgo.getPageFaultCount());
 
         OPTReplacementAlgo optAlgo1 = new OPTReplacementAlgo(5);
         for (int i : pageSequence) {
             optAlgo1.insert(i);
         }
-        assertEquals(3, optAlgo1.getPageFaultCount());
+        assertEquals(8, optAlgo1.getPageFaultCount());
     }
 }

@@ -1,6 +1,7 @@
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
         int[] pageSequence1 = {7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7,0,1};
         int[] pageSequence2 = {8,1,0,7,3,0,3,4,5,3,5,2,0,6,8,4,8,1,5,3};
         int[] pageSequence3 = {4,6,4,8,6,3,6,0,5,9,2,1,0,4,6,3,0,6,8,4};
@@ -8,12 +9,6 @@ public class Main {
         int[] pageSequence4 = {5,3,3,2,6,8,9,8,7,0,3,2,5,6,8};
         int[] pageSequence5 = {5,3,3,2,6,8,9,8,7,0,3,2,5,6,8};
         int[] pageSequence6 = {5,3,3,2,6,8,9,8,7,0,3,2,5,6,8};
-
-        // Test Case have 8 page fault
-        int[] pageSequence7 = {6,6,5,2,8,5,9,3,7,9,1};
-        FIFOReplacementAlgo fifoAlgo7 = new FIFOReplacementAlgo(3);
-        runTestPrintPagefault(fifoAlgo7, "FIFO Test Case 7 ", pageSequence7);
-
 
 
 
